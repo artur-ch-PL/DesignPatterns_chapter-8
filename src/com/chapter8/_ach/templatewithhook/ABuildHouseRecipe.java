@@ -1,6 +1,11 @@
 package com.chapter8._ach.templatewithhook;
 
-public abstract class BuildHouseRecipe {
+public abstract class ABuildHouseRecipe {
+
+	ABuildHouseRecipe(){
+		System.out.println("============================");
+	}
+	
 	final void buildHouse(){
 		foundations();
 		toRoughShell();

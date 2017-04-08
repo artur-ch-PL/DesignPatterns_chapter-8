@@ -1,7 +1,12 @@
 package com.chapter8._ach.templatewithhook;
 
-public class BuildHighEndHouse extends BuildHouseRecipe {
+public class BuildHighEndHouse extends ABuildHouseRecipe {
 
+	public BuildHighEndHouse(){
+		System.out.println("Build high end house");
+		System.out.println("============================");
+	}
+	
 	@Override
 	void toDeveloperState() {
 		System.out.println("House builded to developer state. Roof with tiles.");
@@ -9,7 +14,7 @@ public class BuildHighEndHouse extends BuildHouseRecipe {
 
 	@Override
 	void hookBeforeCompleteState(){
-		System.out.println("Consultation about preferences about finising interior.");
+		System.out.println("[HOOK] Consultation to get preferences about finising interior - before complete state.");
 	}
 
 	@Override
